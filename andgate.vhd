@@ -11,9 +11,9 @@ entity and_gate is
 	);
 end and_gate;
 
-architecture rtl of and_gate is
+architecture behavior of and_gate is
 	signal example_and : std_logic;
 begin
 	example_and <= in1 and in2; --operation for the 2 inputs
 	result <= example_and; --assign result variable with whatever the result of AND operation is 
-end rtl;
+end architecture behavior;
